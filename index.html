@@ -1,0 +1,606 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Ata Hakkak | Full Stack Developer</title>
+    <script src="assets/js/vendors/color-modes.js"></script>
+    <!-- Favicon icon-->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/imgs/logo/Logo1.png" />
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="assets/css/vendors/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/vendors/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/vendors/aos.css" />
+    <link rel="stylesheet" href="assets/css/vendors/odometer.css" />
+    <link rel="stylesheet" href="assets/css/vendors/magnific-popup.css" />
+    <link rel="stylesheet" href="assets/css/vendors/carouselTicker.css" />
+    <link rel="stylesheet" href="assets/fonts/bootstrap-icons/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="assets/fonts/boxicons/boxicons.min.css" />
+    <link rel="stylesheet" href="assets/fonts/fontawesome/fontawesome.min.css" />
+    <link rel="stylesheet" href="assets/fonts/fontawesome/brands.min.css" />
+    <link rel="stylesheet" href="assets/fonts/fontawesome/solid.min.css" />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+</head>
+
+<body class="magic-cursor">
+    <div class="follower">
+    </div>
+    <div class="cursor">
+        <span class="dot"></span>
+    </div> <!--Preloader-->
+    <div id="preloader">
+        <div id="loader" class="loader">
+            <div class="loader-container">
+                <div class="rays justify-content-center align-items-center d-flex"></div>
+            </div>
+        </div>
+    </div>
+    <!--Preloader-end -->
+    <!-- Navbar -->
+    <header>
+        <nav
+            class="navbar custom-container navbar-light start-50 translate-middle-x navbar-expand-lg py-0 mt-lg-4 mt-3 z-5 tcmenu__wrap">
+            <div class="d-flex p-3 p-lg-0 justify-content-between align-items-center w-100">
+                <!--Logo-->
+                <a class="navbar-brand ms-lg-4 d-flex main-logo rounded-5" href="index.html">
+                    <img src="assets/imgs/logo/Logo6R2.png" alt="Ata Hakkak" width="80 px" />
+                    <!-- <span class="text-dark mt-3">Ata Hakkak</span> -->
+                </a>
+                <div class="tcmenu__navbar-wrap tcmenu__main-menu d-none d-lg-flex">
+                    <ul class="navbar-nav me-auto gap-4 align-items-lg-center navigation">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="index.html">Home</a>
+
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#portfolio" role="button" aria-expanded="false">Portfolio</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="#services" role="button" aria-expanded="false">Top Skills</a>
+                            <ul class="dropdown-menu">
+                        </li>
+                    </ul>
+                    </li>
+                    </ul>
+                </div>
+                <div class="d-flex align-items-center me-lg-4 gap-4">
+                    <div class="dark-light-switcher d-flex justify-content-center align-items-center">
+                        <i class="bi theme-icon bi-sun-fill"></i>
+                        <i class="bi theme-icon bi-moon-stars-fill"></i>
+                    </div>
+
+                    <a href="#contact" class="menu-trigger btn btn-outline-secondary d-none d-md-block"> Contact
+                    </a>
+                    <!--Mobile-->
+                    <div class="mobile-nav-toggler  d-lg-none rounded-circle bg-primary icon-shape icon-lg">
+                        <img src="assets/imgs/icon/dot-menu.png" alt="inexa" />
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- prettier-ignore -->
+        <!-- Mobile Menu  -->
+        <div class="tcmobile__menu">
+            <nav class="tcmobile__menu-box">
+                <div class="close-btn"><i class="fas fa-times"></i></div>
+                <div class="nav-logo">
+                    <a class="navbar-brand ms-lg-4 d-flex main-logo" href="index.html">
+                        <img src="assets/imgs/logo/Logo6R2.png" alt="Ata Hakkak" width="40 px" />
+                        <!-- <span class="text-dark">Ata Hakkak</span> -->
+                    </a>
+                </div>
+                <div class="tcmobile__menu-outer"></div>
+
+                <div class="tcmobile__menu-bottom">
+                    <div class="contact-info">
+                        <ul class="list-wrap list-unstyled">
+                            <li><a href="mailto:Ata.Hakkak@gmail.com">Ata.Hakkak@gmail.com</a></li>
+                            <li><a href="tel:+491773943987">+49 177 394 3987</a></li>
+                        </ul>
+                    </div>
+                    <div class="social-links">
+                        <ul class="list-wrap">
+                            <li>
+                                <a href="https://github.com/AtHkB" class=" text-reset">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/ata-hakkak/" class=" text-reset">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="tcmobile__menu-backdrop"></div>
+        <!-- End Mobile Menu -->
+
+        <div class="offCanvas__overly"></div>
+        <!-- Offcanvas menu -->
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions">
+            <div class="offcanvas-header">
+                <div class="offcanvas-close">
+                    <button class="close-btn" data-bs-dismiss="offcanvas" aria-label="Close"><i
+                            class="fas fa-times"></i></button>
+                </div>
+            </div>
+            <div class="offcanvas-body">
+                <div class="offCanvas__logo mb-3">
+                    <a class="navbar-brand ms-lg-4 d-flex main-logo me-8" href="index.html">
+                        <img src="assets/imgs/logo/favicon.svg" alt="inexa" />
+                        <span class="text-dark">Inexa</span>
+                    </a>
+                </div>
+                <div class="offCanvas__side-info mb-4">
+                    <div class="contact-list mb-4">
+                        <h4>Based in Germany</h4>
+                        
+                    </div>
+                    <div class="contact-list mb-4">
+                        <h4>Phone Number</h4>
+                        <p>+49 177 3943987</p>
+                    </div>
+                    <div class="contact-list mb-4">
+                        <h4>Email Address</h4>
+                        <p><a href="mailto:Ata.Hakkak@gmail.com">Ata.Hakkak@gmail.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Offcanvas menu -->
+
+    </header>
+
+    <main>
+        <!--Home 1 Section 1-->
+        <section class="home1_section1 position-relative bg-secondary-1 overflow-hidden">
+            <div class="scroll-move-left positon-relative">
+                <div class="text-move">
+                    <div class="d-flex gap-2">
+                        <p class="stroke_light_lg lh-2 wow img-custom-anim-left opacity-75">Develop with me!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-move-right">
+                <!-- <p class="stroke_dark_lg dark-green lh-1 wow img-custom-anim-right">Ata Hakkak</p> -->
+            </div>
+            <div class="container position-relative">
+                <div class="text-end pt-5 position-absolute bottom-0 end-0" data-aos="zoom-in">
+                    <div class="parallax-item">
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-between container position-absolute top-40 start-50 translate-middle">
+                <div class="text-start position-absoluteq top-40 start-0" data-aos="fade-up">
+                    <p class="fs-5 text-dark scroll-move-up">Full Stak Developer</p>
+                    <p class="fs-5 fw-bold text-dark scroll-move-up">React JS | Next JS | TypeScript | API | Database |
+                        Node JS | API
+                    </p>
+                </div>
+                <div class="position-absolute top-40 end-0" data-aos="fade-up">
+                    <div class="hover-up">
+                        <a href="/ResumeAtaHakkak.pdf" target="_blank" class="btn btn-primary scroll-zoom-out">View Resume</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Home 1 Section 2-->
+        <section class="home1_section2 section-padding overflow-x-hidden">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 wow img-custom-anim-top mb-5 mb-lg-0">
+                        <div class=" d-inline-flex position-relative">
+                            <div class="zoom-img rounded-4 mw-500">
+                                <div class="effect-curtain">
+                                    <div class="parallax-item">
+                                        <img src="assets/imgs/human/img-3b.png" class="firstImg " alt="picture" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow img-custom-anim-left">
+                        <div class="text-primary fw-normal fs-7 text-uppercase ">About Me</div>
+                        <h1 class="fw-bold ds-5 border-bottom pb-4 mt-4">
+                            Fullstack Developer <br class="d-none d-lg-block" />
+                            Experienced in MERN Stack
+                        </h1>
+                        <p class="mt-4">Proficient in front-end technologies such as HTML, CSS, and Typescript,
+                            particularly
+                            React.js / Next.js. Proven ability to develop high-performance, responsive web
+                            applications. Skilled in back-end development using MongoDB and
+
+                            Node.js, with strong experience in API integration (RESTful APIs).</p>
+                        
+                    </div>
+                </div>
+            </div>
+            
+
+        </section>
+        <!--Home 1 Section 3-->
+        <section class="home1_section3 pb-120 overflow-hidden">
+            <div class="container">
+                <div class="text-primary fw-normal fs-7 text-uppercase "><span id="services" class="scroll-move-up">I
+                        can help you with...</span></div>
+                <div id="accordion">
+                    <div class="card mb-4 p-3 border-0">
+                        <div class="wow img-custom-anim-right">
+                            <a class="collapsed text-dark fw-bold" data-bs-toggle="collapse" href="#collapseOne">
+                                <span class="service-item d-flex align-items-center w-100 line-underline">
+                                    <img src="assets/imgs/icon/up-arrow.png" alt="click to open" />
+                                    <span class="lh-sm">React JS</span>
+                                </span>
+                            </a>
+                        </div>
+                        <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+                            <div class="row mt-5 align-items-center card-body">
+                                <div class="col-lg-6">
+                                    <div class="zoom-img d-inline-flex rounded-4">
+                                        <img src="assets/imgs/services/UI6.png" alt="inexa" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 ps-lg-4">
+                                    <h1 class="ds-6">Interactive UI Development</h1>
+                                    <p class="pe-5 mb-5">
+                                        Specialized in building dynamic and responsive user interfaces with React.js,
+                                        enhancing user engagement and interaction.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-4 p-3 border-0">
+                        <div class="wow img-custom-anim-right">
+                            <a class="collapsed text-dark fw-bold" data-bs-toggle="collapse" href="#collapseTwo">
+                                <span class="service-item d-flex align-items-center line-underline">
+                                    <img src="assets/imgs/icon/up-arrow.png" alt="inexa" />
+                                    <span class="lh-sm">Node JS</span>
+                                </span>
+                            </a>
+                        </div>
+                        <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+                            <div class="row mt-5 align-items-center card-body">
+                                <div class="col-lg-6">
+                                    <div class="zoom-img d-inline-flex rounded-4">
+                                        <img src="assets/imgs/services/solution.png" alt="inexa" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 ps-lg-4">
+                                    <h1 class="ds-6">Back-End Solutions</h1>
+                                    <p class="pe-5 mb-5">
+                                        Experienced in developing scalable server-side applications using Node.js,
+                                        optimizing backend functionality and performance.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-4 p-3 border-0">
+                        <div class="wow img-custom-anim-right">
+                            <a class="collapsed text-dark fw-bold" data-bs-toggle="collapse" href="#collapseThree">
+                                <span class="service-item d-flex align-items-center line-underline">
+                                    <img src="assets/imgs/icon/up-arrow.png" alt="inexa" />
+                                    <span>REST API</span>
+                                </span>
+                            </a>
+                        </div>
+                        <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                            <div class="row mt-5 align-items-center card-body">
+                                <div class="col-lg-6">
+                                    <div class="zoom-img d-inline-flex rounded-4">
+                                        <img src="assets/imgs/services/service-3.png" alt="inexa" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 ps-lg-4">
+                                    <h1 class="ds-6">API Integration and Development</h1>
+                                    <p class="pe-5 mb-5">
+                                        Skilled in integrating and designing RESTful APIs to connect web interfaces with
+                                        server-side data and processes seamlessly.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-4 p-3 border-0">
+                        <div class="wow img-custom-anim-right">
+                            <a class="collapsed text-dark fw-bold" data-bs-toggle="collapse" href="#collapseFour">
+                                <span class="service-item d-flex align-items-center line-underline">
+                                    <img src="assets/imgs/icon/up-arrow.png" alt="inexa" />
+                                    <span>SEO</span>
+                                </span>
+                            </a>
+                        </div>
+                        <div id="collapseFour" class="collapse" data-bs-parent="#accordion">
+                            <div class="row mt-5 align-items-center card-body">
+                                <div class="col-lg-6">
+                                    <div class="zoom-img d-inline-flex rounded-4">
+                                        <img src="assets/imgs/services/service-4.png" alt="inexa" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 ps-lg-4">
+                                    <h1 class="ds-6">Search Engine Optimization</h1>
+                                    <p class="pe-5 mb-5">
+                                        Knowledgeable in implementing SEO best practices to improve website visibility
+                                        and organic search rankings, Experienced in Google Analytics.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-4 p-3 border-0">
+                        <div class="wow img-custom-anim-right">
+                            <a class="collapsed text-dark fw-bold" data-bs-toggle="collapse" href="#collapseFive">
+                                <span class="service-item d-flex align-items-center line-underline">
+                                    <img src="assets/imgs/icon/up-arrow.png" alt="inexa" />
+                                    <span>MongoDB</span>
+                                </span>
+                            </a>
+                        </div>
+                        <div id="collapseFive" class="collapse" data-bs-parent="#accordion">
+                            <div class="row mt-5 align-items-center card-body">
+                                <div class="col-lg-6">
+                                    <div class="zoom-img d-inline-flex rounded-4">
+                                        <img src="assets/imgs/services/service-5.png" alt="inexa" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 ps-lg-4">
+                                    <h1 class="ds-6">NoSQL Database Management</h1>
+                                    <p class="pe-5 mb-5">
+                                        Proficient in utilizing MongoDB for efficient data storage, retrieval, and
+                                        management in high-performance applications. </p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-4 p-3 border-0">
+                        <div class="wow img-custom-anim-right">
+                            <a class="collapsed text-dark fw-bold" data-bs-toggle="collapse" href="#collapseSix">
+                                <span class="service-item d-flex align-items-center line-underline">
+                                    <img src="assets/imgs/icon/up-arrow.png" alt="inexa" />
+                                    <span>CSS & SASS</span>
+                                </span>
+                            </a>
+                        </div>
+                        <div id="collapseSix" class="collapse" data-bs-parent="#accordion">
+                            <div class="row mt-5 align-items-center card-body">
+                                <div class="col-lg-6">
+                                    <div class="zoom-img d-inline-flex rounded-4">
+                                        <img src="assets/imgs/services/design1.png" alt="inexa" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 ps-lg-4">
+                                    <h1 class="ds-6">Advanced Styling Techniques</h1>
+                                    <p class="pe-5 mb-5">
+                                        Expert in using CSS and SASS to create visually appealing, maintainable, and
+                                        adaptive website designs. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Home 1 Section 4-->
+        <section class="home1_section4 section-padding bg-secondary-1">
+            <div class="text-center">
+                <div id="portfolio" class="text-primary fw-normal fs-7 text-uppercase ">portfolio</div>
+                <h1>Featured works</h1>
+            </div>
+            <div class="container">
+                <div class="row mt-5 align-items-center bg-white p-5 rounded-4 shadow">
+                    <div class="col-lg-6 wow img-custom-anim-left pb-5 pb-lg-0">
+                        <div class="zoom-img d-inline-flex rounded-4">
+                            <div class="parallax-item">
+                                <img src="assets/imgs/img-feature.png" alt="inexa" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 ps-lg-5 wow img-custom-anim-top">
+                        <h1 class="ds-6">DigiCode Solutions Inc.</h1>
+                        <p class="pe-5 mb-5">
+                            Developed complex and atomic components for a Sofware company using React, SASS, API, Next js.
+                        </p>
+                        <a href="https://digicode.ca/" target="_blank" class="btn btn-outline-secondary fs-7">To The
+                            Website</a>
+                    </div>
+                </div>
+
+                <div class="row mt-5 align-items-center bg-white p-5 rounded-4 shadow">
+                    <div class="col-lg-6 wow img-custom-anim-left pb-5 pb-lg-0">
+                        <div class="zoom-img d-inline-flex rounded-4">
+                            <div class="parallax-item">
+                                <img src="assets/imgs/img-feature3.png" alt="inexa" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 ps-lg-5 wow img-custom-anim-top">
+                        <h1 class="ds-6">Gita Group</h1>
+                        <p class="pe-5 mb-5">
+                            Developed a single page Website application using React JS, CSS, HTML.
+                        </p>
+                        <a href="https://gitagroup.ca/" target="_blank" class="btn btn-outline-secondary fs-7">To The Website</a>
+                    </div>
+                </div>
+
+                <div class="row mt-5 align-items-center bg-white p-5 rounded-4 shadow">
+                    <div class="col-lg-6 wow img-custom-anim-left pb-5 pb-lg-0">
+                        <div class="zoom-img d-inline-flex rounded-4">
+                            <div class="parallax-item">
+                                <img src="assets/imgs/img-feature2.png" alt="inexa" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 ps-lg-5 wow img-custom-anim-top">
+                        <h1 class="ds-6">Rata Music Production Co.</h1>
+                        <p class="pe-5 mb-5">
+                            Developed and maintained a website using Wordpress.
+                        </p>
+                        <a href="https://damourband.com/en/" target="_blank" class="btn btn-outline-secondary fs-7">To
+                            The Website</a>
+                    </div>
+                </div>
+
+                <div class="row mt-5 align-items-center bg-white p-5 rounded-4 shadow">
+                    <div class="col-lg-6 wow img-custom-anim-left pb-5 pb-lg-0">
+                        <div class="zoom-img d-inline-flex rounded-4">
+                            <div class="parallax-item">
+                                <img src="assets/imgs/img-feature7.png" alt="inexa" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 ps-lg-5 wow img-custom-anim-top">
+                        <h1 class="ds-6">Private-Parking Sharing App</h1>
+                        <p class="pe-5 mb-5">
+                            Developed with React.js, Node.js (Express), MongoDB. implemented
+                            robust security measures using JWT. <br>
+                            Integrated GoogleMaps API and features such as user authentication and hourly
+                            parking spot purchases.<br>
+                            <strong>Currently under construction.</strong>                        
+                        </p>
+                        <a href="https://privateparking.netlify.app" target="_blank" class="btn btn-outline-secondary fs-7">To The Website</a>
+                    </div>
+                </div>
+
+
+                <div
+                    class="mt-5 pt-5 gap-4 d-flex flex-md-row flex-column align-items-center justify-content-center wow img-custom-anim-right">
+                    <h5 class="mb-0">More featured works here:</h5>
+                    
+                    <a href="https://github.com/AtHkB" class="btn btn-outline-secondary fs-7 hover-up" target="_blank">
+                        <span class="text-primary me-2">
+                            <i class="fa-brands fa-github"></i>
+                        </span>
+                        Github
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/ata-hakkak/" class="btn btn-outline-secondary fs-7 hover-up"
+                        target="_blank">
+                        <span class="text-primary me-2">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </span>
+                        LinkedIn
+                    </a>
+
+                </div>
+            </div>
+        </section>
+        <!--Home 1 Section 5-->
+        <section class="home1_section5 section-padding overflow-x-hidden">
+            <div class="container">
+
+                <div class="row pt-120">
+                    <div class="col-lg-3 col-md-6 mb-1 text-center">
+                        <div class="brand bg-secondary-1 box-320 rounded-4 icon-shape wow img-custom-anim-top">
+                            <a href="https://digicode.ca/" target="_blank"
+                                class="brand_item rounded-3 box-300 d-flex align-items-center justify-content-center gap-3">
+                                <img src="assets/imgs/icon/DigiCode.png" alt="brand" width="100 px" />
+                                <h2 class="m-0 text-dark">DigiCode Solutions Inc.</h2>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-1 text-center">
+                        <div class="brand bg-secondary-1 box-320 rounded-4 icon-shape wow img-custom-anim-top">
+                            <a href="https://gitagroup.ca/" target="_blank"
+                                class="brand_item rounded-3 box-300 d-flex align-items-center justify-content-center gap-3">
+                                <img src="assets/imgs/icon/GitaGroup.png" alt="brand" />
+                                <h2 class="m-0 text-dark">GitaGroup</h2>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-1 text-center">
+                        <div class="brand bg-secondary-1 box-320 rounded-4 icon-shape wow img-custom-anim-top">
+                            <a href="https://damourband.com/en/" target="_blank"
+                                class="brand_item rounded-3 box-300 d-flex align-items-center justify-content-center gap-3">
+                                <img src="assets/imgs/icon/Damour.png" alt="brand" width="100 px" />
+                                <h2 class="m-0 text-dark">Rata Music Production Co.</h2>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-1 text-center">
+                        <div class="brand bg-secondary-1 box-320 rounded-4 icon-shape wow img-custom-anim-top">
+                            <a href="mailto:Ata.Hakkak@gmail.com"
+                                class="icon_hover icon-shape icon_160 border rounded-circle position-relative overflow-hidden hover-up">
+                                <span class="icon-shape icon-md rounded-circle position-absolute bottom-0 end-0"></span>
+                                <p
+                                    class="m-0 text-uppercase text-secondary position-absolute top-50 start-50 translate-middle">
+                                    you can <br />
+                                    be <span class="text-dark fw-bold">next</span>
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+
+    </main>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-home1 bg-secondary-1 pt-120 overflow-x-hidden"
+            data-background="assets/imgs/background/pattern.png">
+            <div class="container">
+                <div id="contact" class="text-primary fw-normal fs-7 text-uppercase wow img-custom-anim-left">
+                    Have a project? Let's Talk!</div>
+                <div class="position-relative">
+                    <h2 class="fs-80 text-black mt-2 wow img-custom-anim-left"><a
+                            href="mailto:ata.hakkak@gmail.com">Ata.Hakkak@gmail.com</a> </h2>
+                    <h3 class="fs-80 text-black pb-5 mt-2 wow img-custom-anim-left"><a href="tel:+491773943987">+49 177
+                            394 3987</a></h3>
+                    <!-- <div
+                        class="badge position-absolute top-0 translate-middle-y bg-white icon_160 icon-shape rounded-circle shadow">
+                        <img src="assets/imgs/icon/email.png" alt="contact png" />
+                        <div class="position-absolute top-50 start-50 translate-middle w-75">
+                            <img class="ribbonRotate dark-reverse" src="assets/imgs/icon/badge-text.png"
+                                alt="contact png" />
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Scroll top -->
+    <div class="btn-scroll-top">
+        <svg class="progress-square svg-content" width="100%" height="100%" viewBox="0 0 40 40">
+            <path
+                d="M8 1H32C35.866 1 39 4.13401 39 8V32C39 35.866 35.866 39 32 39H8C4.13401 39 1 35.866 1 32V8C1 4.13401 4.13401 1 8 1Z" />
+        </svg>
+    </div>
+    <!-- Libs JS -->
+    <script src="assets/js/vendors/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/vendors/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/vendors/swiper-bundle.min.js"></script>
+    <script src="assets/js/vendors/aos.js"></script>
+    <script src="assets/js/vendors/wow.min.js"></script>
+    <script src="assets/js/vendors/jquery.appear.js"></script>
+    <script src="assets/js/vendors/jquery.odometer.min.js"></script>
+    <script src="assets/js/vendors/headhesive.min.js"></script>
+    <script src="assets/js/vendors/smart-stick-nav.js"></script>
+    <script src="assets/js/vendors/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/vendors/gsap.min.js"></script>
+    <script src="assets/js/vendors/ScrollToPlugin.min.js"></script>
+    <script src="assets/js/vendors/ScrollTrigger.min.js"></script>
+    <script src="assets/js/vendors/custom-cursor.js"></script>
+    <script src="assets/js/vendors/jquery.carouselTicker.min.js"></script>
+    <script src="assets/js/vendors/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/vendors/isotope.pkgd.min.js"></script>
+    <!-- Theme JS -->
+    <script src="assets/js/gsap-custom.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- Other scripts -->
+</body>
+
+</html>
